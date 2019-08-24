@@ -31,7 +31,7 @@ public class CartServiceImpl implements CartService {
 		if (null != dishes) {
 			for(Map.Entry<Integer, Integer> entry : dishes.entrySet()) {
 				dishesValue = new ArrayList<>();
-				dishesValue.add(dishRepository.getDishById(entry.getKey()));
+				dishesValue.add(dishRepository.getDishByDishId(entry.getKey()));
 			}
 			double totalCost = 0.0;
 			CartDetailsDto cartDetailsDto = new CartDetailsDto();

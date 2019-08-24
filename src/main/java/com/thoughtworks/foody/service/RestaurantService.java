@@ -3,6 +3,7 @@
  */
 package com.thoughtworks.foody.service;
 
+import com.thoughtworks.foody.dto.RestarauntDetailsDto;
 import com.thoughtworks.foody.entity.Restaurant;
 
 /**
@@ -13,6 +14,8 @@ public interface RestaurantService {
 	
 	public Restaurant getRestaurantByName(String restaurantName);
 
-	public Restaurant getRestaurantRatings(int restaurantId);
+	public RestarauntDetailsDto getRestaurantRatings(int restaurantId);
+
+	public String setRestaurantRating(int restaurantId, int rating);
 	
 }

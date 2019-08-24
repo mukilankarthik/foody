@@ -42,5 +42,38 @@ public class Restaurant {
 	
 	@OneToMany(mappedBy="restaurantId", cascade = CascadeType.ALL)
     private Set<Rating> ratings;
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public Set<Dish> getDishes() {
+		return dishes;
+	}
+
+	public void setDishes(Set<Dish> dishes) {
+		this.dishes = dishes;
+	}
+
+	public Set<Rating> getRatings() {
+		return ratings;
+	}
+
+	public void setRatings(Set<Rating> ratings) {
+		this.ratings = ratings;
+	}
+	
 	
 }

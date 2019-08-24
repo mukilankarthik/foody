@@ -6,13 +6,15 @@ package com.thoughtworks.foody.repository;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import com.thoughtworks.foody.entity.Dish;
+import com.thoughtworks.foody.entity.Cart;
 
 /**
  * @author mukilan
  *
  */
-@Repository("dishRepository")
-public interface DishRepository extends JpaRepository<Dish, Long> {
-	Dish getDishByDishId(int id);
+@Repository("cartRepository")
+public interface CartRepository extends JpaRepository<Cart, Long>{
+
+	Cart getCartDetailsByCartId(int id);
+	
 }

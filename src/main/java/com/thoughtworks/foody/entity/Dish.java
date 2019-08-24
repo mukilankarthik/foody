@@ -40,6 +40,9 @@ public class Dish {
     
     @Column(name = "count")
     private int count;
+    
+    @Column(name = "cart_id")
+    private int cartId;
 
 	public int getDishId() {
 		return dishId;
